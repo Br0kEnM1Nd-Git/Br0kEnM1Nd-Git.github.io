@@ -241,6 +241,14 @@ ul {
   margin-bottom: 16px;
 }
 
+.f-socials {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+
 .f-socials-link {
   display: block;
   width: 100%;
@@ -322,8 +330,8 @@ ul {
   padding-bottom: 0;
 }
 
-.our-advantages-ul > li {
-  max-width: calc(100% - 72px / 4);
+.our-advantages-li {
+  width: calc((100% - 72px) / 4);
 }
 
 .our-advantages-ul {
@@ -333,15 +341,18 @@ ul {
 }
 
 .oa-icon-container {
-  padding: 24px 0;
-  margin-bottom: 8px;
+  background-color: var(--CLOUD);
+  border-radius: 4px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-advantages-icon {
   display: block;
   width: 64px;
   height: 64px;
-  margin: auto;
 }
 
 /* What Are We Doing */
@@ -359,7 +370,7 @@ ul {
 }
 
 .our-team-li {
-  max-width: calc(100% - 72px / 4);
+  width: calc((100% - 72px) / 4);
   background-color: var(--WHITE);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -411,8 +422,16 @@ ul {
   gap: 24px;
 }
 
+.customers-li {
+  width: calc((100%-120px) / 6);
+}
+
 .customers-link {
   display: block;
+  /* align-items: center;
+  justify-content: center; */
+  /* width: 100%;
+  height: 100%; */
   width: 168px;
   height: 88px;
   border: 1px solid var(--LIGHT_SLATE);
@@ -420,18 +439,20 @@ ul {
   padding: 20px 36px;
 }
 
-.customers-link:hover,
-.customers-link:focus,
-.customers-link:hover .customers-icon,
-.customers-link:focus .customers-icon {
-  fill: var(--OCEAN);
-  border-color: var(--OCEAN);
-}
-
 .customers-icon {
   width: 100%;
   height: 100%;
   fill: var(--customer-icon);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border-color: var(--OCEAN);
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
+  fill: var(--OCEAN);
 }
 /* -------------------- */
 
@@ -483,9 +504,8 @@ ul {
 /* Cards */
 
 .p-card {
-  margin: -1px;
   border: 1px solid var(--CORNFLOWER);
-  max-width: calc(100% - 48px / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .p-card:hover {

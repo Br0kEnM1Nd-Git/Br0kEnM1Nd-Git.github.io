@@ -9,3 +9,4 @@ function validate(event) {
     validationInput.setAttribute("class", "valid");
   }
 }
+// curLength > maxLength || curLength <= 0
